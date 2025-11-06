@@ -35,7 +35,7 @@ const AboutPage: React.FC = () => {
             Crafting Unforgettable Journeys
           </h1>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-            At Serandib Trails, we are a passionate team of travel professionals and friends dedicated to showcasing the true essence of Sri Lanka. 
+            At Serendib Trails, we are a passionate team of travel professionals and friends dedicated to showcasing the true essence of Sri Lanka. 
             Our company was founded on a shared love for exploration and a commitment to delivering exceptional travel experiences tailored to every guest.
           </p>
         </div>
@@ -67,7 +67,7 @@ const AboutPage: React.FC = () => {
         {/* 3. Why Choose Us (Value Proposition) */}
         <div className="mb-20">
           <h2 className="text-3xl font-bold text-center mb-10 text-gray-900">
-            Why Choose Serandib Trails?
+            Why Choose Serendib Trails?
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center p-6 rounded-xl bg-blue-50 border-t-4 border-blue-600 shadow-md">

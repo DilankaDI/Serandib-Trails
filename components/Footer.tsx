@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
           {/* 1. Brand & Description */}
           <div className="col-span-2 md:col-span-2">
             <h3 className="text-3xl font-bold text-blue-400 mb-4">
-              Serandib Trails
+              Serendib Trails
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed pr-8">
               Discover the pearl of the Indian Ocean. We craft personalized, unforgettable journeys across Sri Lanka’s cultural, beach, and wildlife hotspots.
@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
               </p>
               <p className="flex items-center">
                 <FaEnvelope className="mr-2 text-blue-400" />
-                serandibtrails@gmail.com
+                serendibtrails@gmail.com
               </p>
               <p className="flex items-start">
                 <FaMapMarkerAlt className="mr-2 mt-1 text-blue-400 shrink-0" />
@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
       <div className="bg-gray-800 py-4 border-t border-gray-700">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
           <p className="mb-2 md:mb-0">
-            &copy; {new Date().getFullYear()} Serandib Trails. All rights reserved.
+            &copy; {new Date().getFullYear()} Serendib Trails. All rights reserved.
           </p>
           <div className="space-x-4">
             <Link href="/privacy" className="hover:text-white transition duration-300">Privacy Policy</Link>

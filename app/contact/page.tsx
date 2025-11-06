@@ -133,7 +133,7 @@ const ContactPage: React.FC = () => {
               <ul className="space-y-4 text-gray-700">
                 <li className="flex items-center">
                   <FaEnvelope className="mr-3 text-blue-600 shrink-0" size={20} />
-                  <span className="font-medium">serandibtrails@gmail.com</span>
+                  <span className="font-medium">serendibtrails@gmail.com</span>
                 </li>
                 <li className="flex items-center">
                   <FaPhone className="mr-3 text-blue-600 shrink-0" size={20} />
