@@ -4,8 +4,8 @@ import Footer from "@/components/Footer"; // ✅ keep this
 import WhatsAppWidget from "@/components/WhatsAppWidget";
 
 export const metadata = {
-  title: "Serendib Trails",
-  description: "Discover Sri Lanka with Serendib Trails",
+  title: "Soul Of Lanka",
+  description: "Discover Sri Lanka with Soul Of Lanka",
 };
 
 export default function RootLayout({

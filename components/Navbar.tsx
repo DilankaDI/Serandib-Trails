@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Menu, X, Home, Info, Phone, PlaneTakeoff, List, Hotel, FileText } from 'lucide-react';
+import { Menu, X, Home, Info, MessageSquareQuote, PlaneTakeoff, List, Hotel, FileText } from 'lucide-react';
 
 // ✅ Reusable Link Component (Mock for standalone React)
 // Replace with: `import Link from 'next/link'` if using Next.js
@@ -24,7 +24,7 @@ const navLinks = [
   { name: 'Our Packages', href: '/packages', icon: List },
   { name: 'About Us', href: '/about', icon: Info },
   { name: 'Hotels', href: '/hotels', icon: Hotel },
-  { name: 'Contact Us', href: '/contact', icon: Phone },
+  { name: 'Contact Us', href: '/contact', icon: MessageSquareQuote },
   { name: 'T&C', href: '/t&c', icon: FileText },
 ];
 

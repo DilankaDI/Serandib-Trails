@@ -15,19 +15,19 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    src: "/Images/Carousel/c1.jpg",
+    src: "/Images/Carousel/c 0.jpg",
     alt: "Beautiful beach in Sri Lanka, clear water, and palm trees",
     title: "Discover Paradise",
     subtitle: "Explore Sri Lanka’s stunning coastlines and culture",
   },
   {
-    src: "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+    src: "/Images/Carousel/c 1.jpg",
     alt: "Misty mountain range in Sri Lanka, lush greenery",
     title: "Adventure Awaits",
     subtitle: "From misty mountains to lush tea plantations",
   },
   {
-    src: "https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef",
+    src: "/Images/Carousel/c 2.jpg",
     alt: "Ancient Sri Lankan temple with intricate stone carvings",
     title: "Cultural Heritage",
     subtitle: "Experience timeless traditions and warm hospitality",
