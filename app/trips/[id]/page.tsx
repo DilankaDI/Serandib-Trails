@@ -25,7 +25,7 @@ export default async function TripDetailPage({ params }: { params: Promise<{ id:
     <div className="max-w-7xl mx-auto py-12 px-6">
       <div className="bg-white shadow-xl rounded-2xl overflow-hidden">
         {/* Header Section */}
-        <div className="relative h-96 w-full">
+        {/* <div className="relative h-96 w-full">
           <Image
             src={trip.image}
             alt={trip.name}
@@ -38,7 +38,36 @@ export default async function TripDetailPage({ params }: { params: Promise<{ id:
               {trip.name}
             </h1>
           </div>
-        </div>
+        </div> */}
+
+<div className="relative h-96 w-full overflow-hidden group">
+  {/* Background image */}
+  <Image
+    src={trip.backdrop} // or "/Images/Destinations/ella.jpg"
+    alt={trip.title}
+    fill
+    priority
+    className="object-cover scale-105 transition-transform duration-700 ease-out group-hover:scale-110"
+  />
+
+  {/* Dark overlay for contrast */}
+  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+
+  {/* Title text (3D blended effect, NO box) */}
+<div className="absolute inset-0 flex items-center justify-center p-10 text-center">
+  <h1
+    className="text-6xl md:text-9xl font-extrabold text-transparent bg-clip-text
+               bg-gradient-to-b from-white/90 via-white/60 to-white/20
+               drop-shadow-[0_4px_10px_rgba(0,0,0,0.8)]
+               mix-blend-overlay tracking-wide select-none leading-tight"
+  >
+    {trip.title}
+  </h1>
+</div>
+
+</div>
+
+
 
         {/* Details */}
         <div className="p-10 grid lg:grid-cols-3 gap-10">

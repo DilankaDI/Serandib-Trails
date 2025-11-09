@@ -3,9 +3,11 @@
 interface Trip {
   id: number;
   name: string;
+  title: string;
   days: number;
   categories: string[];
   image: string;
+  backdrop: string;
   // REQUIRED for the detail page
   description: string;
   gallery: string[]; 
@@ -15,9 +17,11 @@ export const trips: Trip[] = [
       {
     id: 1,
     name: "3-Day Coastal & Hill Country Explorer from Colombo",
+    title: "Coast & Hills",
     days: 3,
     categories: ["Adventure", "Scenic", "Cultural"],
     image:"/images/coastal.jpg",
+    backdrop:"/images/backdrop-1.jpg",
     description: `
   Experience the best of Sri Lanka’s coastlines and hill country in this 3-day, 2-night journey from Colombo — blending golden beaches, cool mountains, and cultural charm.
 
@@ -73,9 +77,11 @@ export const trips: Trip[] = [
   {
     id: 2,
     name: "3-Day Southern Adventure from Bentota",
+    title: "Southern Quest",
     days: 3,
     categories: ["Adventure", "Wildlife", "Hill Side"],
     image:"/images/benthota beach.jpg",
+    backdrop:"/images/madu river 2.jpg", 
     description: `
   Embark on a thrilling 3-day, 2-night journey from Bentota through Sri Lanka’s southern wonders — from serene rivers and coastal gems to wild safaris and breathtaking mountain landscapes.
 
@@ -132,9 +138,11 @@ export const trips: Trip[] = [
   {
     id: 3,
     name: "3-Day Culture, Heritage & Village Experience Tour from Negombo",
+    title: "Cultural Essence",
     days: 3,
     categories: ["Cultural", "Historical", "Village Life"],
     image:"/images/Pinnawala-Elephant-Orphanage-1.jpg",
+    backdrop:"/images/Sri Dalada Maligawa.jpg",
     description: `
   Discover Sri Lanka’s cultural heartland in this 3-day journey from Negombo — visiting ancient kingdoms, sacred temples, and experiencing authentic village life.
 
@@ -187,9 +195,11 @@ export const trips: Trip[] = [
   {
     id: 4,
     name: "Tea Trails of Nuwara Eliya",
+    title: "Tea Trails",
     days: 3,
     categories: ["Hill Side", "Countryside"],
     image:"/images/tea trails 1.jpg",
+    backdrop:"/images/backdrop-1.jpg",
     description: "Immerse yourself in the colonial charm and rolling tea plantations of Nuwara Eliya, the 'Little England' of Sri Lanka.",
     gallery: [
       "/images/tea trails 1.jpg",
@@ -199,9 +209,11 @@ export const trips: Trip[] = [
   {
     id: 5,
     name: "Anuradhapura Heritage Tour",
+    title: "Sacred Ruins",
     days: 14,
     categories: ["Historical"],
     image:"/images/anuradhapura heritage 2.jpg",
+    backdrop:"/images/anuradhapura heritage 4.jpg",
     description: "A deep dive into Sri Lanka's ancient kingdom, exploring colossal dagobas, ancient reservoirs, and historical ruins.",
     gallery: [
       "/images/anuradhapura heritage 1.jpg",
@@ -213,9 +225,11 @@ export const trips: Trip[] = [
   {
     id: 6,
     name: "Adam's Peak Hike",
+    title: "Adam’s Ascent",
     days: 21,
     categories: ["Adventure", "Safari", "Hill Side"],
     image:"/images/adam's peak 2.jpeg",
+    backdrop:"/images/adam's peak 4.jpg",
     description: "The ultimate Sri Lankan expedition, combining culture, wildlife, and the challenging but rewarding climb to the summit of Adam's Peak.",
     gallery: [
       "/images/adam's peak 1.jpg",
