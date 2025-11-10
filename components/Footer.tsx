@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-// You might need to install 'react-icons' for the social media icons: 
-// npm install react-icons
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTiktok, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import { AiOutlineWechat } from "react-icons/ai";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer: React.FC = () => {
   return (
@@ -19,17 +19,24 @@ const Footer: React.FC = () => {
               Discover the pearl of the Indian Ocean. We craft personalized, unforgettable journeys across Sri Lanka’s cultural, beach, and wildlife hotspots.
             </p>
             <div className="flex space-x-4 mt-6">
-              <a href="#" aria-label="Facebook" className="text-gray-400 hover:text-blue-500 transition duration-300">
+              <a href="https://www.facebook.com/share/192bVJCkCm/" aria-label="Facebook" className="text-gray-400 hover:text-blue-500 transition duration-300">
                 <FaFacebook size={24} />
               </a>
-              <a href="#" aria-label="Twitter" className="text-gray-400 hover:text-blue-400 transition duration-300">
-                <FaTwitter size={24} />
+               <a href="https://x.com/yourusername" className="text-gray-400 hover:text-black transition">
+                <FaXTwitter size={24} />
               </a>
-              <a href="#" aria-label="Instagram" className="text-gray-400 hover:text-pink-500 transition duration-300">
+              <a href="https://www.instagram.com/travelwithsouloflanka?igsh=NTl5aDZlaTcycnBt" aria-label="Instagram" className="text-gray-400 hover:text-pink-500 transition duration-300">
                 <FaInstagram size={24} />
               </a>
-              <a href="#" aria-label="LinkedIn" className="text-gray-400 hover:text-blue-600 transition duration-300">
-                <FaLinkedin size={24} />
+              <a href="https://www.tiktok.com/@soul.of.lanka6?_r=1&_t=ZS-91HYaB8yjGq" aria-label="LinkedIn" className="text-gray-400 hover:text-gray-600 transition duration-300">
+                <FaTiktok size={24} />
+              </a>
+              <a
+                href="mailto:travelwithsouloflanka@gmail.com"
+                aria-label="Email"
+                className="text-gray-400 hover:text-red-600 transition duration-300"
+              >
+                <FaEnvelope size={24} />
               </a>
             </div>
           </div>
@@ -67,12 +74,12 @@ const Footer: React.FC = () => {
                 +94 11 234 5678
               </p>
               <p className="flex items-center">
-                <FaEnvelope className="mr-2 text-blue-400" />
-                serendibtrails@gmail.com
+                <AiOutlineWechat className="mr-2 text-blue-400" />
+                wxid_a00qlip8xxo22
               </p>
               <p className="flex items-start">
                 <FaMapMarkerAlt className="mr-2 mt-1 text-blue-400 shrink-0" />
-                Galle Road, Kalutara North, Sri Lanka
+                No.256, Galle Road, Kalutara North, Sri Lanka
               </p>
             </address>
           </div>

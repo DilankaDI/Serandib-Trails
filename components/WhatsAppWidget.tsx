@@ -11,7 +11,7 @@ const DEFAULT_MESSAGE = "Hello Ceylon Adventures, I'm interested in planning a t
 const getWhatsAppLink = (number: string, message: string) => {
     // The link uses a standard format for click-to-chat
     const encodedMessage = encodeURIComponent(message);
-    return `https://wa.me/${number}?text=${encodedMessage}`;
+    return `https://wa.me/${+94771303233}?text=${encodedMessage}`;
 };
 
 const WhatsAppWidget: React.FC = () => {
@@ -19,7 +19,7 @@ const WhatsAppWidget: React.FC = () => {
 
   return (
     // Fixed positioning ensures it stays visible regardless of scrolling
-    <div className="fixed bottom-6 right-6 z-[100]">
+    <div className="fixed bottom-6 right-6 z-100">
       <a 
         href={whatsappLink}
         target="_blank" // Open in a new tab
