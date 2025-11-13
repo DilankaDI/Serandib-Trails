@@ -1,6 +1,6 @@
 // data/trips.ts
 
-interface Trip {
+export interface Trip {
   id: number;
   name: string;
   title: string;
@@ -192,52 +192,219 @@ export const trips: Trip[] = [
     ],
   },
 
-  {
+    {
     id: 4,
-    name: "Tea Trails of Nuwara Eliya",
-    title: "Tea Trails",
-    days: 3,
-    categories: ["Hill Side", "Countryside"],
-    image:"/Images/tea trails 1.jpg",
-    backdrop:"/Images/backdrop-1.jpg",
-    description: "Immerse yourself in the colonial charm and rolling tea plantations of Nuwara Eliya, the 'Little England' of Sri Lanka.",
+    name: "7-Day Sri Lanka Highlights Tour from Colombo",
+    title: "Sri Lanka Highlights",
+    days: 7,
+    categories: ["Cultural", "Adventure", "Nature"],
+    image: "/Images/ella.jpg",
+    backdrop: "/Images/ella.jpg",
+    description: `
+Explore Sri Lanka’s best highlights in 7 unforgettable days — from Colombo’s city vibes to ancient temples, misty hills, wild safaris, and golden beaches.
+
+🗓️ **Day 1 – Arrival & Explore Colombo**
+City Tour | Galle Face | Independence Square | Gangaramaya Temple | Lotus Tower
+
+🗓️ **Day 2 – Colombo ➜ Pinnawala ➜ Kandy**
+Pinnawala Elephant Orphanage | Spice Garden | Cultural Show | Temple of the Tooth
+
+🗓️ **Day 3 – Kandy ➜ Nuwara Eliya**
+Gem Factory | Ramboda Falls | Tea Plantation | Gregory Lake
+
+🗓️ **Day 4 – Nuwara Eliya ➜ Ella (Train Ride)**
+Scenic Train | Little Adam’s Peak | Nine Arches Bridge
+
+🗓️ **Day 5 – Ella ➜ Yala**
+Ravana Falls | Jeep Safari | Wildlife Spotting
+
+🗓️ **Day 6 – Yala ➜ Galle ➜ Bentota**
+Galle Fort | Turtle Hatchery | Madu River Boat Safari
+
+🗓️ **Day 7 – Bentota ➜ Colombo**
+Beach Relaxation | Water Sports | Return Journey
+
+🌴 **Highlights:**
+City, Wildlife, Culture, Nature, Heritage & Beach Bliss.
+    `,
     gallery: [
-      "/Images/tea trails 1.jpg",
-      "/Images/tea trails 2.jpg",
-    ],
+      "/Images/ella.jpg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpg"
+    ]
   },
+
+  // Trip #5 — 10-Day Grand Experience
   {
     id: 5,
-    name: "Anuradhapura Heritage Tour",
-    title: "Sacred Ruins",
-    days: 14,
-    categories: ["Historical"],
-    image:"/Images/anuradhapura heritage 2.jpg",
-    backdrop:"/Images/anuradhapura heritage 4.jpg",
-    description: "A deep dive into Sri Lanka's ancient kingdom, exploring colossal dagobas, ancient reservoirs, and historical ruins.",
+    name: "10-Day Sri Lanka Grand Experience Tour",
+    title: "Grand Experience",
+    days: 10,
+    categories: ["Adventure", "Cultural", "Heritage"],
+    image: "/Images/ella.jpg",
+    backdrop: "/Images/ella.jpg",
+    description: `
+A 10-day journey through Sri Lanka’s coast, highlands, heritage cities, and wildlife reserves — the perfect blend of adventure and relaxation.
+
+🗓️ **Day 1 – Bentota ➜ Galle ➜ Mirissa**
+Madu River | Turtle Hatchery | Galle Fort | Mirissa Sunset
+
+🗓️ **Day 2 – Mirissa ➜ Yala**
+Whale Watching | Yala Safari
+
+🗓️ **Day 3 – Yala ➜ Ella**
+Ravana Falls | Little Adam’s Peak | Nine Arches
+
+🗓️ **Day 4 – Ella ➜ Nuwara Eliya**
+Train Ride | Tea Plantation | Gregory Lake
+
+🗓️ **Day 5 – Nuwara Eliya ➜ Kandy**
+Ramboda Falls | Temple of the Tooth | Cultural Dance
+
+🗓️ **Day 6 – Kandy ➜ Sigiriya / Dambulla**
+Spice Garden | Sigiriya Rock | Dambulla Caves
+
+🗓️ **Day 7 – Sigiriya ➜ Polonnaruwa ➜ Sigiriya**
+Ancient City | Village Tour | Authentic Lunch
+
+🗓️ **Day 8 – Sigiriya ➜ Trincomalee**
+East Coast | Koneswaram Temple | Hot Springs | Beach
+
+🗓️ **Day 9 – Trincomalee ➜ Anuradhapura**
+Sacred City Tour | Sri Maha Bodhi | Ruwanwelisaya
+
+🗓️ **Day 10 – Anuradhapura ➜ Colombo**
+Return Drive | Optional City Tour
+
+🌿 **Highlights:**
+Whale Watching, Safari, Ancient Cities, Beaches & Tea Hills.
+    `,
     gallery: [
-      "/Images/anuradhapura heritage 1.jpg",
-      "/Images/anuradhapura heritage 2.jpg",
-      "/Images/anuradhapura heritage 3.jpg",
-      "/Images/anuradhapura heritage 4.jpg",
-    ],
+      "/Images/ella.jpg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpg"
+    ]
   },
+
+  // Trip #6 — 14-Day Grand Discovery
   {
     id: 6,
-    name: "Adam's Peak Hike",
-    title: "Adam’s Ascent",
-    days: 21,
-    categories: ["Adventure", "Safari", "Hill Side"],
-    image:"/Images/adam's peak 2.jpeg",
-    backdrop:"/Images/adam's peak 4.jpg",
-    description: "The ultimate Sri Lankan expedition, combining culture, wildlife, and the challenging but rewarding climb to the summit of Adam's Peak.",
+    name: "14-Day Sri Lanka Grand Discovery Tour",
+    title: "Grand Discovery",
+    days: 14,
+    categories: ["Adventure", "Cultural", "Nature"],
+    image: "/Images/ella.jpg",
+    backdrop: "/Images/ella.jpg",
+    description: `
+This 14-day trip covers everything — heritage, culture, wildlife, mountains, beaches, and modern city life. A full-circle Sri Lankan experience.
+
+🗓️ **Day 1 – Arrival in Negombo**
+City Tour | Fish Market | Beach Sunset
+
+🗓️ **Day 2 – Negombo ➜ Sigiriya**
+Pinnawala | Dambulla Caves
+
+🗓️ **Day 3 – Sigiriya ➜ Polonnaruwa ➜ Sigiriya**
+Ancient Ruins | Village Tour
+
+🗓️ **Day 4 – Sigiriya ➜ Anuradhapura**
+Sacred City | Ruwanwelisaya
+
+🗓️ **Day 5 – Sigiriya ➜ Kandy**
+Spice Garden | Temple of the Tooth
+
+🗓️ **Day 6 – Kandy Sightseeing**
+Botanical Garden | Gem Workshop | Market
+
+🗓️ **Day 7 – Kandy ➜ Nuwara Eliya**
+Ramboda Falls | Tea Country
+
+🗓️ **Day 8 – Nuwara Eliya ➜ Horton Plains ➜ Ella**
+World’s End | Train Ride | Little Adam’s Peak
+
+🗓️ **Day 9 – Ella**
+Nine Arches | Ravana Falls | Zipline
+
+🗓️ **Day 10 – Ella ➜ Yala**
+Jeep Safari
+
+🗓️ **Day 11 – Yala ➜ Mirissa**
+Beach Relaxation
+
+🗓️ **Day 12 – Mirissa ➜ Galle ➜ Bentota**
+Whale Watching | Galle Fort | Madu River
+
+🗓️ **Day 13 – Bentota**
+Beach & Ayurveda
+
+🗓️ **Day 14 – Bentota ➜ Colombo**
+City Tour | Shopping | Departure
+
+🏯 **Highlights:**
+UNESCO Sites, Wildlife Safaris, Train Journeys, Beaches, & Culture.
+    `,
     gallery: [
-      "/Images/adam's peak 1.jpg",
-      "/Images/adam's peak 2.jpeg",
-      "/Images/adam's peak 3.jpg",
-      "/Images/adam's peak 4.jpg",
-    ],
+      "/Images/ella.jpg",
+      "/Images/ella.jpeg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpg"
+    ]
   },
+
+  // Trip #7 — 21-Day Ceylon Explorer
+  {
+    id: 7,
+    name: "21-Day Ceylon Explorer – The Grand Circle Tour",
+    title: "Ceylon Explorer",
+    days: 21,
+    categories: ["Cultural", "Adventure", "Heritage", "Nature"],
+    image: "/Images/ella.jpg",
+    backdrop: "/Images/ella.jpg",
+    description: `
+A 21-day ultimate journey across Sri Lanka — from ancient kingdoms to modern cities, mountains, beaches, and sacred sites.
+
+🗓️ **Highlights Include:**
+Negombo | Wilpattu | Anuradhapura | Mihintale | Sigiriya | Polonnaruwa | Dambulla | Kandy | Nuwara Eliya | Horton Plains | Ella | Buduruwagala | Yala | Tangalle | Mirissa | Galle | Bentota | Colombo | Kalpitiya
+
+🏝️ Wildlife, Culture, Tea Hills, Temples, Beaches, and Urban Life all in one grand adventure.
+
+🌿 **Tour Summary:**
+- Heritage & Culture: Anuradhapura, Polonnaruwa, Sigiriya, Dambulla
+- Wildlife: Wilpattu, Yala, Dolphins, Turtle Hatchery
+- Nature: Tea Hills, Horton Plains, Waterfalls
+- Adventure: Train Ride, Zipline, Safaris
+- Beaches: Tangalle, Mirissa, Bentota, Kalpitiya
+- Local Life: Village Tours & Cooking
+- Modern Touch: Colombo City & Shopping
+    `,
+    gallery: [
+      "/Images/ella.jpg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpeg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpg",
+      "/Images/ella.jpg"
+    ]
+  }
 ];
 
 // Helper function to find a trip by ID
