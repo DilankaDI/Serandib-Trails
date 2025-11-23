@@ -6,21 +6,27 @@ import Image from 'next/image';
 const teamMembers = [
   {
     id: 1,
-    name: "Anya Silva",
+    name: "Dewo",
     title: "Chief Experience Officer",
     image: "https://images.unsplash.com/photo-1544005313-914a42b87f08?auto=format&fit=crop&w=300&h=300&q=80",
   },
   {
     id: 2,
-    name: "Ravi Kumara",
+    name: "Lahiru Ishan",
     title: "Lead Cultural Guide",
-    image: "https://images.unsplash.com/photo-1531427186006-adeb01705132?auto=format&fit=crop&w=300&h=300&q=80",
+    image: "/Images/Crew/Lahiru.png",
   },
   {
     id: 3,
     name: "Nirosha Perera",
     title: "Head of Operations",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29329?auto=format&fit=crop&w=300&h=300&q=80",
+  },
+  {
+    id: 4,
+    name: "Dilshan Dilanka",
+    title: "Digital Marketing & Technology Strategist",
+    image: "/Images/Crew/Dilanka.png",
   },
 ];
 
@@ -56,7 +62,7 @@ const AboutPage: React.FC = () => {
           <div className="order-1 lg:order-2 relative h-96 w-full rounded-2xl shadow-2xl overflow-hidden">
              {/* Using a captivating image of Sri Lanka */}
             <Image
-              src="/Images/about 1.jpg" 
+              src="/Images/about 1.png" 
               alt="Scenic view of Sri Lanka"
               fill
               className="object-cover"
@@ -96,12 +102,12 @@ const AboutPage: React.FC = () => {
         {/* 4. Meet the Team */}
         <div className="text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Meet Our Travel Experts
+            Meet the Team Behind Soul of Lanka
           </h2>
           <p className="text-lg text-gray-600 mb-12">
-            The faces behind the adventure—local guides, planners, and logistics pros.
+            The leadership team that plans, manages, and drives every part of the Soul of Lanka experience.
           </p>
-          <div className="grid md:grid-cols-3 gap-10">
+          <div className="grid md:grid-cols-4 gap-10">
             {teamMembers.map((member) => (
               <div key={member.id} className="p-6 bg-gray-50 rounded-xl shadow-lg transition hover:shadow-xl">
                 <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-blue-200">
