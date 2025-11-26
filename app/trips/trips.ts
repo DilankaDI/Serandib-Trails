@@ -388,7 +388,7 @@ UNESCO Sites, Wildlife Safaris, Train Journeys, Beaches, & Culture.
     `,
     gallery: [
       "/Images/ella.jpg",
-      "/Images/ella.jpeg",
+      "/Images/ella.jpg",
       "/Images/ella.jpg",
       "/Images/ella.jpg",
       "/Images/ella.jpg",
@@ -407,8 +407,8 @@ UNESCO Sites, Wildlife Safaris, Train Journeys, Beaches, & Culture.
     title: "Ceylon Explorer",
     days: 21,
     categories: ["Cultural", "Adventure", "Heritage", "Nature"],
-    image: "/Images/ella.jpg",
-    backdrop: "/Images/ella.jpg",
+    image: "/Images/wilpattu_2.jpg",
+    backdrop: "/Images/wilpattu_2.jpg",
     description: `
 A 21-day ultimate journey across Sri Lanka — from ancient kingdoms to modern cities, mountains, beaches, and sacred sites.
 
@@ -427,17 +427,18 @@ Negombo | Wilpattu | Anuradhapura | Mihintale | Sigiriya | Polonnaruwa | Dambull
 - Modern Touch: Colombo City & Shopping
     `,
     gallery: [
-      "/Images/ella.jpg",
-      "/Images/ella.jpg",
-      "/Images/ella.jpeg",
-      "/Images/ella.jpg",
-      "/Images/ella.jpg",
-      "/Images/ella.jpg",
-      "/Images/ella.jpg",
-      "/Images/ella.jpg",
-      "/Images/ella.jpg",
-      "/Images/ella.jpg",
-      "/Images/ella.jpg"
+      "/Images/wilpattu.jpg",
+      "/Images/wilpattu_2.jpg",
+      "/Images/dolphin_watching.jpg",
+      "/Images/horton_plains.jpg",
+      "/Images/horton_plains_2.jpg",
+      "/Images/baker's_fall.jpg",
+      "/Images/tangalle_beach.jpg",
+      "/Images/kalpitiya_beach.jpg",
+      "/Images/kalpitiya_beach_2.jpg",
+      "/Images/village_cooking.jpg",
+      "/Images/village_cooking_2.jpg",
+      "/Images/colombo_city.jpg"
     ]
   }
 ];
