@@ -236,7 +236,7 @@ City, Wildlife, Culture, Nature, Heritage & Beach Bliss.
       "/Images/Tooth temple.jpg",
       "/Images/Spice garden.jpg",
       "/Images/ramboda falls.png",
-      "/Images/tea plantation.PNG",
+      "/Images/tea trails 1.jpg",
       "/Images/gregory lake.png",
       "/Images/train.png",
       "/Images/little adams peak.jpg",
@@ -260,8 +260,8 @@ City, Wildlife, Culture, Nature, Heritage & Beach Bliss.
     title: "Grand Experience",
     days: 10,
     categories: ["Adventure", "Cultural", "Heritage"],
-    image: "/Images/ella.jpg",
-    backdrop: "/Images/ella.jpg",
+    image: "/Images/dance.jpg",
+    backdrop: "/Images/little adams peak.jpg",
     description: `
 A 10-day journey through Sri Lanka’s coast, highlands, heritage cities, and wildlife reserves — the perfect blend of adventure and relaxation.
 
@@ -299,13 +299,33 @@ Return Drive | Optional City Tour
 Whale Watching, Safari, Ancient Cities, Beaches & Tea Hills.
     `,
     gallery: [
-      "/Images/ella.jpg",
-      "/Images/ella.jpg",
-      "/Images/ella.jpg",
-      "/Images/ella.jpg",
-      "/Images/ella.jpg",
-      "/Images/ella.jpg",
-      "/Images/ella.jpg"
+      "/Images/benthota beach.jpg",
+      "/Images/Galle Fort 2.jpg",
+      "/Images/mirissa.png",
+      "/Images/whale watching.png",
+      "/Images/yala-national-park-1.jpg",
+      "/Images/yala-national-park-2.jpg",
+      "/Images/Ravana-Waterfall.jpg",
+      "/Images/little adams peak.jpg",
+      "/Images/nine arches.jpg",
+      "/Images/train.png",
+      "/Images/tea trails 1.jpg",
+      "/Images/gregory lake.png",
+      "/Images/ramboda falls.png",
+      "/Images/Sri Dalada Maligawa.jpg",
+      "/Images/dance.jpg",
+      "/Images/Spice garden.jpg",
+      "/Images/sigiriya.jpeg",
+      "/Images/dambulla cave.png",
+      "/Images/Sigiriya Village Tour 2.jpg",
+      "/Images/Sigiriya Village Tour.jpg",
+      "/Images/lunch.png",
+      "/Images/east coast.png",
+      "/Images/koneswaram.png",
+      "/Images/trincomalee beach.png",
+      "/Images/sacred city.png",
+      "/Images/sri maha bodhi.png",
+      "/Images/ruwanwelisaya.png"
     ]
   },
 
