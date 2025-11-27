@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
               <a href="https://www.facebook.com/share/192bVJCkCm/" aria-label="Facebook" className="text-gray-400 hover:text-blue-500 transition duration-300">
                 <FaFacebook size={24} />
               </a>
-              <a href="https://x.com/yourusername" className="text-gray-400 hover:text-black transition">
+              <a href="https://x.com/travelwithsouloflanka" className="text-gray-400 hover:text-black transition">
                 <FaXTwitter size={24} />
               </a>
               <a href="https://www.instagram.com/travelwithsouloflanka?igsh=NTl5aDZlaTcycnBt" aria-label="Instagram" className="text-gray-400 hover:text-pink-500 transition duration-300">
@@ -70,6 +70,10 @@ const Footer: React.FC = () => {
               <p className="flex items-center justify-center md:justify-start">
                 <FaPhone className="mr-2 text-blue-400" />
                 +94 77 130 3233
+              </p>
+              <p className="flex items-center justify-center md:justify-start">
+                <FaEnvelope className="mr-2 text-blue-400" />
+                travelwithsouloflanka@gmail.com
               </p>
               <p className="flex items-center justify-center md:justify-start">
                 <AiOutlineWechat className="mr-2 text-blue-400" />
