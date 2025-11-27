@@ -6,27 +6,28 @@ import Image from 'next/image';
 const teamMembers = [
   {
     id: 1,
-    name: "M G D S K Gamage",
+    name: "Lahiru Ishan",
     title: "Chief Experience Officer",
-    image: "/Images/Crew/Gamage.jpg",
+    image: "/Images/Crew/Lahiru.png",
+    
   },
   {
     id: 2,
-    name: "Lahiru Ishan",
-    title: "Lead Cultural Guide",
-    image: "/Images/Crew/Lahiru.png",
+    name: "M G D S K Gamage",
+    title: "Director of People & Culture",
+    image: "/Images/Crew/Gamage.jpg",
   },
   {
     id: 3,
-    name: "J T R Jayasooriya",
-    title: "Head of Operations",
-    image: "/Images/Crew/Jayasooriya.jpg",
+    name: "Dashi Fernando",
+    title: "Senior Travel Experience Planner ",
+    image: "/Images/Crew/dashi.jpg",
   },
    {
     id: 4,
-    name: "Dashi Fernando",
-    title: "Head of Operations",
-    image: "/Images/Crew/dashi.jpg",
+    name: "J T R Jayasooriya",
+    title: "Director of Guide Operations",
+    image: "/Images/Crew/Jayasooriya.jpg",
   },
   {
     id: 5,
