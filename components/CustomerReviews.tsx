@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState, useEffect, useRef, useMemo } from 'react';
+import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import Image from 'next/image';
 
-// PLACEHOLDER DATA (Kept the same)
+// PLACEHOLDER DATA
 const reviewScreenshots = [
     "/Images/Reviews/review1.jpg",
     "/Images/Reviews/review2.jpg",
@@ -12,107 +12,109 @@ const reviewScreenshots = [
 ];
 
 // Configuration
-const NUM_CLONES = 2; // Number of slides to duplicate at the start and end
+const NUM_CLONES = 2; 
 const CARD_WIDTH = 384; 
 const GAP_WIDTH = 24; 
 
 const CustomerReviews: React.FC = () => {
-    // currentIndex starts at the first real slide (after the clones)
-    const [currentIndex, setCurrentIndex] = useState(NUM_CLONES); 
+
+    const [currentIndex, setCurrentIndex] = useState(NUM_CLONES);
     const reviewRef = useRef<HTMLDivElement>(null);
     const containerRef = useRef<HTMLDivElement>(null);
-    
-    const REAL_SLIDES = reviewScreenshots.length;
-    const TOTAL_SLIDES = REAL_SLIDES + NUM_CLONES * 2; // Real + Clones (Start) + Clones (End)
 
-    // 💡 1. Prepare the looped slide array (Real slides + Clones)
+    const REAL_SLIDES = reviewScreenshots.length;
+
+    // -------------------------------------------------
+    // 1️⃣ useMemo FIXED — dependency changed to REAL_SLIDES
+    // -------------------------------------------------
     const loopedScreenshots = useMemo(() => {
         if (REAL_SLIDES === 0) return [];
 
-        // Clone slides from the end and put them at the start
         const clonesStart = reviewScreenshots.slice(-NUM_CLONES);
-        // Clone slides from the start and put them at the end
         const clonesEnd = reviewScreenshots.slice(0, NUM_CLONES);
 
         return [...clonesStart, ...reviewScreenshots, ...clonesEnd];
-    }, [reviewScreenshots]);
+    }, [REAL_SLIDES]);
 
-    // Helper to calculate the target index after the jump
-    const getTargetIndex = (index: number) => {
+
+    // -------------------------------------------------
+    // 2️⃣ getTargetIndex wrapped in useCallback (Fix ESLint)
+    // -------------------------------------------------
+    const getTargetIndex = useCallback((index: number) => {
         let newIndex = index;
+
         if (index >= REAL_SLIDES + NUM_CLONES) {
-            // If past the last real slide (into the end clones), jump back to the start clones
             newIndex = NUM_CLONES;
         } else if (index < NUM_CLONES) {
-            // If before the first real slide (into the start clones), jump forward to the end clones
-            newIndex = REAL_SLIDES + NUM_CLONES - 1; 
+            newIndex = REAL_SLIDES + NUM_CLONES - 1;
         }
         return newIndex;
-    }
+    }, [REAL_SLIDES]);
 
-    // --- Core Animation Logic ---
 
-    // 💡 2. Handle the Auto-Transition and Instant Jump Logic
+    // -------------------------------------------------
+    // 3️⃣ Auto-scroll + Infinite loop logic (deps fixed)
+    // -------------------------------------------------
     useEffect(() => {
-        let isTransitioning = false; // Flag to prevent rapid firing during jump
+        let isTransitioning = false;
 
         const handleTransitionEnd = () => {
             isTransitioning = false;
-            // Check if we hit a cloned slide and need to jump instantly
+
             const targetIndex = getTargetIndex(currentIndex);
+
             if (targetIndex !== currentIndex) {
-                // Instantly jump to the non-cloned version
                 reviewRef.current!.style.transitionDuration = '0ms';
                 setCurrentIndex(targetIndex);
             }
         };
 
-        // Attach event listener for transition end to handle the instant jump
         const currentRef = reviewRef.current;
         currentRef?.addEventListener('transitionend', handleTransitionEnd);
 
-        // Set up the auto-scroll interval
         const interval = setInterval(() => {
             if (!isTransitioning) {
                 isTransitioning = true;
-                // Before incrementing, make sure the smooth transition is active
                 reviewRef.current!.style.transitionDuration = '700ms';
-                setCurrentIndex((prevIndex) => prevIndex + 1);
+                setCurrentIndex((prev) => prev + 1);
             }
-        }, 5000); 
+        }, 5000);
 
         return () => {
             clearInterval(interval);
             currentRef?.removeEventListener('transitionend', handleTransitionEnd);
         };
-    }, [currentIndex, REAL_SLIDES]); // Re-run when currentIndex changes
+    }, [currentIndex, REAL_SLIDES, getTargetIndex]);
 
-    
-    // 💡 3. Scroll/Translate Logic for Positioning
+
+    // -------------------------------------------------
+    // Scroll / positioning
+    // -------------------------------------------------
     useEffect(() => {
         if (reviewRef.current && containerRef.current) {
             const containerWidth = containerRef.current.offsetWidth;
-            
-            // The logic operates on the TOTAL_SLIDES array
+
             const offsetToCardLeft = currentIndex * (CARD_WIDTH + GAP_WIDTH);
             const centerShift = (containerWidth / 2) - (CARD_WIDTH / 2);
             const finalTranslateX = offsetToCardLeft - centerShift;
 
             reviewRef.current.style.transform = `translateX(-${finalTranslateX}px)`;
         }
-    }, [currentIndex]); // Only depend on currentIndex for translation
+    }, [currentIndex]);
 
-    // --- Helper Functions for User Interaction ---
-    
+
+    // -------------------------------------------------
+    // User navigation (dots)
+    // -------------------------------------------------
     const goToSlide = (newIndex: number) => {
-        // Ensure smooth transition is enabled before moving
-        reviewRef.current!.style.transitionDuration = '700ms'; 
-        // We map the user's index (0 to REAL_SLIDES-1) to the actual array index (NUM_CLONES to REAL_SLIDES + NUM_CLONES - 1)
+        reviewRef.current!.style.transitionDuration = '700ms';
         setCurrentIndex(newIndex + NUM_CLONES);
     };
 
-    // --- Component JSX ---
 
+    // -------------------------------------------------
+    // UI
+    // -------------------------------------------------
     return (
         <section className="py-20 bg-gray-50 text-gray-800">
             <div className="max-w-7xl mx-auto px-6">
@@ -126,22 +128,18 @@ const CustomerReviews: React.FC = () => {
                     </p>
                 </div>
 
-                {/* 📸 Carousel Container (The fixed viewport) */}
                 <div 
                     ref={containerRef} 
                     className="relative overflow-hidden mx-auto max-w-full md:max-w-6xl"
                 >
                     <div 
-                        ref={reviewRef} 
-                        // Start with a smooth transition duration
+                        ref={reviewRef}
                         style={{ transitionDuration: '700ms' }}
                         className="flex space-x-6 transition-transform ease-in-out"
                     >
-                        {/* MAP OVER THE LOOPED ARRAY (Real Slides + Clones) */}
                         {loopedScreenshots.map((src, index) => (
                             <div 
-                                key={index} 
-                                // **w-96 h-64 for a landscape card size**
+                                key={index}
                                 className="shrink-0 w-96 h-64 bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden group cursor-pointer"
                             >
                                 <div className="relative w-full h-full">
@@ -149,24 +147,24 @@ const CustomerReviews: React.FC = () => {
                                         src={src}
                                         alt={`Customer Review Screenshot ${index + 1}`}
                                         fill
-                                        className="object-contain" 
+                                        className="object-contain"
                                     />
                                     <div className="absolute inset-0 bg-teal-600 opacity-0 group-hover:opacity-10 transition duration-300"></div>
                                 </div>
                             </div>
                         ))}
                     </div>
-                    
+
                     {/* Navigation Dots */}
                     <div className="flex justify-center space-x-2 mt-6">
-                        {/* Dots only track the REAL slides */}
                         {reviewScreenshots.map((_, index) => (
                             <button
                                 key={index}
                                 onClick={() => goToSlide(index)}
                                 className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-                                    // Map current slide index back to real index for dot highlighting
-                                    (currentIndex - NUM_CLONES) === index ? 'bg-blue-600' : 'bg-gray-300 hover:bg-gray-400'
+                                    (currentIndex - NUM_CLONES) === index
+                                        ? 'bg-blue-600'
+                                        : 'bg-gray-300 hover:bg-gray-400'
                                 }`}
                                 aria-label={`Go to review ${index + 1}`}
                             />
