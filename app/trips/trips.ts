@@ -436,8 +436,8 @@ UNESCO Sites, Wildlife Safaris, Train Journeys, Beaches, & Culture.
     title: "Ceylon Explorer",
     days: 21,
     categories: ["Cultural", "Adventure", "Heritage", "Nature"],
-    image: "/Images/wilpattu_2.jpg",
-    backdrop: "/Images/wilpattu_2.jpg",
+    image: "/Images/train_ride.jpg",
+    backdrop: "/Images/train_ride.jpg",
     description: `
 A 21-day ultimate journey across Sri Lanka — a full loop covering ancient cities, sacred sites, national parks, tea mountains, beaches, coastal towns and modern Colombo.
 
@@ -456,16 +456,19 @@ Rock Climb | Sunset View
 🗓️ **Day 5 – Anuradhapura ➜ Sigiriya**
 Village Tour | Relax Evening
 
-**Day 6 – Sigiriya ➜ Polonnaruwa ➜ Sigiriya**
+🗓️ **Day 6 – Sigiriya ➜ Polonnaruwa ➜ Sigiriya**
 Ancient Kingdom | Cycling Tour
 
-**Day 7 – Sigiriya ➜ Dambulla ➜ Kandy**
+🗓️ **Day 7 – Sigiriya ➜ Dambulla ➜ Kandy**
 Golden Temple | Cultural Show
-**Day 8 – Kandy Sightseeing**
+
+🗓️ **Day 8 – Kandy Sightseeing**
 Temple of the Tooth | Gem Museum | Market
-**Day 9 – Kandy ➜ Nuwara Eliya**
+
+🗓️ **Day 9 – Kandy ➜ Nuwara Eliya**
 Tea Factory | Ramboda Falls
-**Day 10 – Nuwara Eliya ➜ Horton Plains ➜ Ella**
+
+🗓️ **Day 10 – Nuwara Eliya ➜ Horton Plains ➜ Ella**
 World’s End | Train Ride | Little Adam’s Peak
 
 🗓️ **Day 11 – Ella**
@@ -517,22 +520,53 @@ Wildlife, Culture, Tea Hills, Ancient Cities, Train Journeys, Waterfalls, Beache
       "/Images/mihintalaya_1.jpg",
       "/Images/mihintalaya_2.jpg",
       "/Images/mihintalaya_3.jpg",
+      "/Images/Sigiriya Village Tour.jpg",
+      "/Images/Sigiriya Village Tour 2.jpg",
+      "/Images/sigiriya.jpeg",
+      "/Images/golden_temple.jpg",
+      "/Images/cave_temple.jpg",
+      "/Images/cave_temple_2.jpg",
+      "/Images/ancient_city_1.jpg",
+      "/Images/ancient_city_2.jpg",
+      "/Images/ancient_city_3.jpg",
+      "/Images/Sri Dalada Maligawa.jpg",
+      "/Images/gems.jpg",
+      "/Images/gem workshop.PNG",
+      "/Images/ramboda_falls.jpg",
+      "/Images/ramboda_falls_2.jpg",
+      "/Images/tea_factory.jpg",
       "/Images/horton_plains.jpg",
       "/Images/horton_plains_2.jpg",
-      "/Images/worlds end.PNG",
       "/Images/train_ride.jpg",
-      "/Images/train.png",
       "/Images/ravana_falls.jpg",
       "/Images/nine arches.jpg",
       "/Images/zip_line.jpg",
-      "/Images/whale watching.PNG",
+      "/Images/yala-national-park-1.jpg",
+      "/Images/yala-national-park-2.jpg",
+      "/Images/buduruwagala_1.jpg",
       "/Images/turtle.png",
+      "/Images/turtle_2.jpg",
+      "/Images/coastal.jpg",
+      "/Images/tango_beach_1.jpg",
+      "/Images/tangalle_beach.jpg",
+      "/Images/nilwella_beach.jpg",
+      "/Images/mirissa.PNG",
+      "/Images/mirissa_beach_2.jpg",
+      "/Images/mirissa_beach_3.jpg",
       "/Images/Galle Fort 1.jpg",
       "/Images/madu river 2.jpg",
       "/Images/dolphin_watching.jpg",
+      "/Images/ayurweda.jpg",
+      "/Images/water_sport_1.jpg",
+      "/Images/water_sport_2.jpg",
+      "/Images/red_mosque_1.jpg",
+      "/Images/colombo_city.jpg",
+      "/Images/colombo_city_1.jpg",
       "/Images/kalpitiya_beach.jpg",
       "/Images/kalpitiya_beach_2.jpg",
-      "/Images/colombo_city.jpg",
+      "/Images/dolphin_watching.jpg",
+      "/Images/kalpitiya_beach.jpg",
+      "/Images/kalpitiya_beach_2.jpg",
     ]
   }
 ];
