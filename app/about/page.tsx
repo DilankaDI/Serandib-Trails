@@ -30,7 +30,7 @@ const teamMembers = [
   },
   {
     id: 5,
-    name: "Pending",
+    name: "Lashikala Madubashini",
     title: "Customer Experience Director",
     image: "",
   },
