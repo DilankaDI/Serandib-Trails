@@ -30,6 +30,12 @@ const teamMembers = [
   },
   {
     id: 5,
+    name: "Pending",
+    title: "Customer Experience Director",
+    image: "",
+  },
+  {
+    id: 6,
     name: "Dilshan Dilanka",
     title: "Digital Marketing & Technology Strategist",
     image: "/Images/Crew/Dilanka.png",
@@ -113,7 +119,7 @@ const AboutPage: React.FC = () => {
           <p className="text-lg text-gray-600 mb-12">
             The leadership team that plans, manages, and drives every part of the Soul of Lanka experience.
           </p>
-          <div className="grid md:grid-cols-5 gap-10">
+          <div className="grid md:grid-cols-3 gap-10">
             {teamMembers.map((member) => (
               <div key={member.id} className="p-6 bg-gray-50 rounded-xl shadow-lg transition hover:shadow-xl">
                 <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-blue-200">
