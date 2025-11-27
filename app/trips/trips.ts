@@ -439,35 +439,100 @@ UNESCO Sites, Wildlife Safaris, Train Journeys, Beaches, & Culture.
     image: "/Images/wilpattu_2.jpg",
     backdrop: "/Images/wilpattu_2.jpg",
     description: `
-A 21-day ultimate journey across Sri Lanka — from ancient kingdoms to modern cities, mountains, beaches, and sacred sites.
+A 21-day ultimate journey across Sri Lanka — a full loop covering ancient cities, sacred sites, national parks, tea mountains, beaches, coastal towns and modern Colombo.
 
-🗓️ **Highlights Include:**
-Negombo | Wilpattu | Anuradhapura | Mihintale | Sigiriya | Polonnaruwa | Dambulla | Kandy | Nuwara Eliya | Horton Plains | Ella | Buduruwagala | Yala | Tangalle | Mirissa | Galle | Bentota | Colombo | Kalpitiya
+🗓️ **Day 1 – Arrival in Negombo**
+Beach Walk | Lagoon | Fishing Village
 
-🏝️ Wildlife, Culture, Tea Hills, Temples, Beaches, and Urban Life all in one grand adventure.
+🗓️ **Day 2 – Negombo ➜ Wilpattu**
+Safari | Nature Trails
 
-🌿 **Tour Summary:**
-- Heritage & Culture: Anuradhapura, Polonnaruwa, Sigiriya, Dambulla
-- Wildlife: Wilpattu, Yala, Dolphins, Turtle Hatchery
-- Nature: Tea Hills, Horton Plains, Waterfalls
-- Adventure: Train Ride, Zipline, Safaris
-- Beaches: Tangalle, Mirissa, Bentota, Kalpitiya
-- Local Life: Village Tours & Cooking
-- Modern Touch: Colombo City & Shopping
-    `,
+🗓️ **Day 3 – Wilpattu ➜ Anuradhapura**
+Sacred City | Ruwanwelisaya | Thuparamaya
+
+🗓️ **Day 4 – Anuradhapura ➜ Mihintale**
+Rock Climb | Sunset View
+
+🗓️ **Day 5 – Anuradhapura ➜ Sigiriya**
+Village Tour | Relax Evening
+
+**Day 6 – Sigiriya ➜ Polonnaruwa ➜ Sigiriya**
+Ancient Kingdom | Cycling Tour
+
+**Day 7 – Sigiriya ➜ Dambulla ➜ Kandy**
+Golden Temple | Cultural Show
+**Day 8 – Kandy Sightseeing**
+Temple of the Tooth | Gem Museum | Market
+**Day 9 – Kandy ➜ Nuwara Eliya**
+Tea Factory | Ramboda Falls
+**Day 10 – Nuwara Eliya ➜ Horton Plains ➜ Ella**
+World’s End | Train Ride | Little Adam’s Peak
+
+🗓️ **Day 11 – Ella**
+Nine Arches | Ravana Falls | Zipline
+
+🗓️ **Day 12 – Ella ➜ Buduruwagala ➜ Yala**
+Rock Carvings | Safari
+
+🗓️ **Day 13 – Yala ➜ Tangalle**
+Beach Relax | Turtle Watching
+
+🗓️ **Day 14 – Tangalle**
+Private Beach Day
+
+🗓️ **Day 15 – Tangalle ➜ Mirissa**
+Beachside Cafes | Chill Evening
+
+🗓️ **Day 16 – Mirissa ➜ Galle ➜ Bentota**
+Whale Watching | Galle Fort | Madu River
+
+🗓️ **Day 17 – Bentota**
+Water Sports | Ayurveda
+
+🗓️ **Day 18 – Bentota ➜ Colombo**
+Red Mosque | City Walk | Shopping
+
+🗓️ **Day 19 – Colombo ➜ Kalpitiya**
+Lagoon | Dolphin Watching
+
+🗓️ **Day 20 – Kalpitiya**
+Kitesurfing | Beach
+
+🗓️ **Day 21 – Return from Kalpitiya ➜ Airport**
+Departure
+
+🌿 **Highlights:**
+Wildlife, Culture, Tea Hills, Ancient Cities, Train Journeys, Waterfalls, Beaches, Dolphins, Local Life, Modern Colombo.
+`,
     gallery: [
+      "/Images/negambo_1.jpg",
+      "/Images/negambo_2.jpg",
+      "/Images/negambo_3.jpg",
       "/Images/wilpattu.jpg",
       "/Images/wilpattu_2.jpg",
-      "/Images/dolphin_watching.jpg",
+      "/Images/wilpattu_3.jpg",
+      "/Images/ruwanwelisaya.PNG",
+      "/Images/sacred city.PNG",
+      "/Images/thuparamaya.jpg",
+      "/Images/mihintalaya_1.jpg",
+      "/Images/mihintalaya_2.jpg",
+      "/Images/mihintalaya_3.jpg",
       "/Images/horton_plains.jpg",
       "/Images/horton_plains_2.jpg",
-      "/Images/baker's_fall.jpg",
-      "/Images/tangalle_beach.jpg",
+      "/Images/worlds end.PNG",
+      "/Images/train_ride.jpg",
+      "/Images/train.png",
+      "/Images/ravana_falls.jpg",
+      "/Images/nine arches.jpg",
+      "/Images/zip_line.jpg",
+      "/Images/whale watching.PNG",
+      "/Images/turtle.png",
+      "/Images/Galle Fort 1.jpg",
+      "/Images/madu river 2.jpg",
+      "/Images/dolphin_watching.jpg",
       "/Images/kalpitiya_beach.jpg",
       "/Images/kalpitiya_beach_2.jpg",
-      "/Images/village_cooking.jpg",
-      "/Images/village_cooking_2.jpg",
-      "/Images/colombo_city.jpg"
+      "/Images/colombo_city.jpg",
     ]
   }
 ];
