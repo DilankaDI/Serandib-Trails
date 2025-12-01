@@ -86,7 +86,7 @@ const packagesData = [
       { name: "Guide Service", check: true },
       { name: "Travel Insurance", check: true },
       { name: "24/7 Support", check: true },
-      { name: "Entrance Tickets", check: false },
+      { name: "Entrance Tickets", check: true },
       { name: "Meals", check: false },
     ],
   },
