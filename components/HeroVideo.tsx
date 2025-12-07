@@ -10,7 +10,7 @@ const HeroVideo: React.FC = () => {
     >
       {/* --- Background Video --- */}
 <video
-  src="/videos/sea waves.mp4"
+  src="/videos/sea waves compressed.mp4"
   poster="/images/hero-poster.jpg"
   autoPlay
   loop
