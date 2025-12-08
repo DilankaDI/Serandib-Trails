@@ -6,6 +6,9 @@ import WhatsAppWidget from "@/components/WhatsAppWidget";
 export const metadata = {
   title: "Soul Of Lanka",
   description: "Discover Sri Lanka with Soul Of Lanka",
+  icons: {
+    icon: '/favicon.ico', 
+  },
 };
 
 export default function RootLayout({
