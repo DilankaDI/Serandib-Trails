@@ -7,7 +7,7 @@ export const metadata = {
   title: "Soul Of Lanka",
   description: "Discover Sri Lanka with Soul Of Lanka",
   icons: {
-    icon: '/favicon.ico', 
+    icon: '/icon-v2.ico', 
   },
 };
 
