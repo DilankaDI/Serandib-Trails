@@ -24,7 +24,7 @@ const ContactPage = () => {
           {/* Left Column: Image */}
           <div className="lg:col-span-2 relative rounded-3xl overflow-hidden shadow-2xl h-[500px]">
             <Image
-              src="/Images/about.jpg"
+              src="/Images/contact us.png"
               alt="Travel journey illustration"
               fill
               priority
