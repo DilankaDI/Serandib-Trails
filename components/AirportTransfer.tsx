@@ -51,7 +51,7 @@ const AirportTransfer: React.FC = () => {
               <li>✔️ Pick you up from the airport and drop you at your hotel (island-wide)</li>
               <li>✔️ Pick you up from your hotel and drop you at the airport (island-wide)</li>
               <li>✔️ Private vehicles (Car / Van / Bus)</li>
-              <li>✔️ English-speaking drivers</li>
+              <li>✔️ Multi-language speaking drivers</li>
               <li>✔️ 24/7 availability</li>
               <li>✔️ Fixed & transparent pricing</li>
             </ul>
