@@ -547,56 +547,81 @@ const PackagesPage: React.FC = () => {
   // JSON-LD Structured Data
   // -----------------------------
    const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "TravelAgency",
-    "name": "Your Company Name",
-    "url": "https://yourwebsite.com/packages",
-    "description": "Explore our Sri Lanka travel packages. Compare Premium, Gold, and Budget options including duration, price, and features.",
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Sri Lanka Tour Packages",
-      "itemListElement": tourPricingByVehicle.map((tour) => ({
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Product",
-          "name": tour.tour,
-          "description": `Tour Type: ${tour.tour}. Available with Premium, Gold, and Budget packages.`,
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "Soul Of Lanka",
+  "url": "https://souloflanka.com/packages",
+  "description": "Explore our Sri Lanka travel packages. Compare Premium, Gold, and Budget options including duration, price, and features.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Sri Lanka Tour Packages",
+    "itemListElement": tourPricingByVehicle.map((tour) => ({
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Product",
+        "name": tour.tour,
+        "description": `Tour Type: ${tour.tour}. Available with Premium, Gold, and Budget packages across Car, Van, and Bus.`,
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": tour.car.premium,
+          "priceCurrency": "USD",
+          "url": "https://souloflanka.com/packages"
         },
-        "offers": [
-          {
-            "@type": "Offer",
-            "price": tour.car.premium,
-            "priceCurrency": "USD",
-            "url": "https://yourwebsite.com/packages",
-            "eligibleQuantity": {
-              "@type": "QuantitativeValue",
-              "value": 1
-            }
-          },
-          {
-            "@type": "Offer",
-            "price": tour.car.gold,
-            "priceCurrency": "USD",
-            "url": "https://yourwebsite.com/packages",
-            "eligibleQuantity": {
-              "@type": "QuantitativeValue",
-              "value": 1
-            }
-          },
-          {
-            "@type": "Offer",
-            "price": tour.car.budget,
-            "priceCurrency": "USD",
-            "url": "https://yourwebsite.com/packages",
-            "eligibleQuantity": {
-              "@type": "QuantitativeValue",
-              "value": 1
-            }
-          }
-        ]
-      }))
-    }
-  };
+        {
+          "@type": "Offer",
+          "price": tour.car.gold,
+          "priceCurrency": "USD",
+          "url": "https://souloflanka.com/packages"
+        },
+        {
+          "@type": "Offer",
+          "price": tour.car.budget,
+          "priceCurrency": "USD",
+          "url": "https://souloflanka.com/packages"
+        },
+        {
+          "@type": "Offer",
+          "price": tour.van.premium,
+          "priceCurrency": "USD",
+          "url": "https://souloflanka.com/packages"
+        },
+        {
+          "@type": "Offer",
+          "price": tour.van.gold,
+          "priceCurrency": "USD",
+          "url": "https://souloflanka.com/packages"
+        },
+        {
+          "@type": "Offer",
+          "price": tour.van.budget,
+          "priceCurrency": "USD",
+          "url": "https://souloflanka.com/packages"
+        },
+        {
+          "@type": "Offer",
+          "price": tour.bus.premium,
+          "priceCurrency": "USD",
+          "url": "https://souloflanka.com/packages"
+        },
+        {
+          "@type": "Offer",
+          "price": tour.bus.gold,
+          "priceCurrency": "USD",
+          "url": "https://souloflanka.com/packages"
+        },
+        {
+          "@type": "Offer",
+          "price": tour.bus.budget,
+          "priceCurrency": "USD",
+          "url": "https://souloflanka.com/packages"
+        }
+      ]
+    }))
+  }
+};
+
 
 
   return (
