@@ -205,17 +205,24 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { trips } from "@/app/trips/trips"; 
+import { trips } from "@/app/trips/trips";
 
 const FeaturedTrips: React.FC = () => {
   return (
-    <section className="py-20 bg-white text-gray-800">
+    <section
+      className="py-20 bg-white text-gray-800"
+      aria-label="Featured Sri Lanka tour packages"
+    >
       <div className="max-w-6xl mx-auto px-6">
+
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold">Our Featured Trips</h2>
+          <h2 className="text-4xl font-bold">
+            Featured Sri Lanka Tour Packages
+          </h2>
           <p className="mt-3 text-gray-600 text-lg">
-            Discover Sri Lanka’s best experiences handpicked for you.
+            Explore handpicked Sri Lanka travel packages including beaches,
+            wildlife, culture, and adventure tours.
           </p>
         </div>
 
@@ -227,21 +234,24 @@ const FeaturedTrips: React.FC = () => {
                 key={trip.id}
                 href={`/trips/${trip.id}`}
                 className="bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-lg transition overflow-hidden block group"
+                aria-label={`View ${trip.name} Sri Lanka tour package`}
               >
                 <div className="relative w-full h-52">
                   <Image
                     src={trip.image}
-                    alt={trip.name}
+                    alt={`${trip.name} Sri Lanka tour package`}
                     fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover group-hover:scale-105 transition duration-300"
                   />
+
                   <div className="absolute top-3 left-3 flex flex-wrap gap-2 z-10">
                     {trip.categories.map((cat, i) => (
                       <span
                         key={i}
                         className="bg-teal-600 text-white text-sm px-3 py-1 rounded-full font-medium shadow-md"
                       >
-                        {cat}
+                        {cat} Tour
                       </span>
                     ))}
                   </div>
@@ -251,9 +261,12 @@ const FeaturedTrips: React.FC = () => {
                   <h3 className="text-xl font-semibold mb-2 group-hover:text-teal-700 transition">
                     {trip.name}
                   </h3>
+
                   <p className="text-gray-600">
                     Duration:{" "}
-                    <span className="font-medium">{trip.days} days</span>
+                    <span className="font-medium">
+                      {trip.days} Days Sri Lanka Tour
+                    </span>
                   </p>
                 </div>
               </Link>
@@ -261,7 +274,7 @@ const FeaturedTrips: React.FC = () => {
           </div>
         ) : (
           <p className="text-center text-gray-500 mt-10">
-            No trips available at the moment.
+            Sri Lanka tour packages will be available soon.
           </p>
         )}
       </div>
