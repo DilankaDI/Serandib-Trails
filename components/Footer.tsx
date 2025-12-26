@@ -5,6 +5,29 @@ import { AiOutlineWechat } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer: React.FC = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Soul Of Lanka",
+    "url": "https://souloflanka.com",
+    "description":
+      "Soul Of Lanka is a Sri Lanka-based travel agency offering customized tours, cultural experiences, beach holidays, and wildlife safaris.",
+    "telephone": "+94 77 130 3233",
+    "email": "travelwithsouloflanka@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "No.256, Galle Road, Kalutara North",
+      "addressLocality": "Kalutara",
+      "addressCountry": "LK",
+    },
+    "sameAs": [
+      "https://www.facebook.com/share/192bVJCkCm/",
+      "https://www.instagram.com/travelwithsouloflanka",
+      "https://www.tiktok.com/@soul.of.lanka6",
+      "https://x.com/travelwithsouloflanka"
+    ],
+  };
+  
   return (
     <footer className="bg-gray-900 text-gray-300 border-t border-teal-600 mt-20">
       <div className="max-w-7xl mx-auto px-6 py-12 md:py-16">
@@ -96,6 +119,12 @@ const Footer: React.FC = () => {
           </p>
         </div>
       </div>
+
+           {/* ✅ SEO Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
     </footer>
   );
 };

@@ -169,7 +169,8 @@
 import React from "react";
 import Image from "next/image";
 import TripDetails from "../../../components/TripDetails";
-import { trips, getTripById } from "../trips";
+import { getTripById } from "../trips";
+import Head from "next/head";
 
 interface TripPageProps {
   // Next.js may provide `params` as a Promise in some runtime modes,
@@ -195,6 +196,42 @@ export default async function TripPage({ params }: TripPageProps) {
 
   return (
     <div className="max-w-7xl mx-auto py-12 px-6 space-y-10">
+      
+    <Head>
+      {/* Basic SEO */}
+      <title>{trip.title} | Soul Of Lanka</title>
+      <meta name="description" content={trip.description.slice(0, 160)} />
+
+      {/* Open Graph / Social Sharing */}
+      <meta property="og:title" content={trip.title} />
+      <meta property="og:description" content={trip.description.slice(0, 160)} />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={`https://souloflanka.com/trips/${trip.id}`} />
+      <meta property="og:image" content={trip.image} />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={trip.title} />
+      <meta name="twitter:description" content={trip.description.slice(0, 160)} />
+      <meta name="twitter:image" content={trip.image} />
+
+      {/* Structured Data (JSON-LD) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "TouristTrip",
+            "name": trip.title,
+            "description": trip.description.slice(0, 300),
+            "image": trip.image,
+            "url": `https://souloflanka.com/trips/${trip.id}`,
+            "touristType": trip.categories,
+            "duration": `P${trip.days}D`
+          })
+        }}
+      />
+    </Head>
+
       {/* Header */}
 <div className="relative h-96 w-full overflow-hidden rounded-2xl">
   <Image
