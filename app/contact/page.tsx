@@ -4,10 +4,19 @@ import React from "react";
 import Image from "next/image";
 import { Mail, Phone } from "lucide-react";
 import { AiOutlineWechat } from "react-icons/ai";
+import Head from "next/head";
 
 const ContactPage = () => {
   return (
     <div className="py-16 md:py-24 bg-gray-50 font-sans">
+      <Head>
+        <title>Contact Us | Soul Of Lanka</title>
+        <meta
+          name="description"
+          content="Reach out to Soul Of Lanka for trip planning, inquiries, and partnerships."
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="max-w-7xl mx-auto px-6">
         {/* Header Section */}
         <div className="text-center mb-16">
