@@ -171,7 +171,7 @@ const Navbar: React.FC = () => {
           <Link href="/" className="flex items-center space-x-3">
             <Image
               src="/Images/logo.png"   
-              alt="SerenTrails Logo"
+              alt="Soul Of Lanka Logo"
               width={200}
               height={150}
               className="object-contain rounded-md"

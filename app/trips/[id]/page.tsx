@@ -280,6 +280,18 @@ export default async function TripPage({ params }: TripPageProps) {
 
       {/* Trip Details */}
       <TripDetails trip={trip} />
+    
+      {/* Check Prices Button */}
+      <div className="text-center mt-8">
+        <a
+          href="/packages"
+          className="inline-block px-8 py-3 text-lg font-bold text-white bg-orange-500 rounded-full shadow-lg 
+                    hover:bg-orange-600 hover:shadow-xl transition duration-300 transform hover:scale-105"
+        >
+          Check Prices
+        </a>
+      </div>
+
     </div>
   );
 }
