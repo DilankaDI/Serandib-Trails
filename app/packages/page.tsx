@@ -71,7 +71,7 @@
 //       { name: "Travel Insurance", check: true },
 //       { name: "24/7 Support", check: true },
 //       { name: "Entrance Tickets", check: true },
-//       { name: "Meals", check: true },
+//       { name: "Snacks (One time)", check: true },
 //     ],
 //   },
 //   {
@@ -87,7 +87,7 @@
 //       { name: "Travel Insurance", check: true },
 //       { name: "24/7 Support", check: true },
 //       { name: "Entrance Tickets", check: true },
-//       { name: "Meals", check: false },
+//       { name: "Snacks (One time)", check: false },
 //     ],
 //   },
 //   {
@@ -103,7 +103,7 @@
 //       { name: "Travel Insurance", check: true },
 //       { name: "24/7 Support", check: true },
 //       { name: "Entrance Tickets", check: false },
-//       { name: "Meals", check: false },
+//       { name: "Snacks (One time)", check: false },
 //     ],
 //   },
 // ];
@@ -404,7 +404,7 @@ const packagesData = [
       { name: "Travel Insurance", check: true },
       { name: "24/7 Support", check: true },
       { name: "Entrance Tickets", check: true },
-      { name: "Meals", check: true },
+      { name: "Snacks (One time)", check: true },
     ],
   },
   {
@@ -420,7 +420,7 @@ const packagesData = [
       { name: "Travel Insurance", check: true },
       { name: "24/7 Support", check: true },
       { name: "Entrance Tickets", check: true },
-      { name: "Meals", check: false },
+      { name: "Snacks (One time)", check: false },
     ],
   },
   {
@@ -436,7 +436,7 @@ const packagesData = [
       { name: "Travel Insurance", check: true },
       { name: "24/7 Support", check: true },
       { name: "Entrance Tickets", check: false },
-      { name: "Meals", check: false },
+      { name: "Snacks (One time)", check: false },
     ],
   },
 ];
