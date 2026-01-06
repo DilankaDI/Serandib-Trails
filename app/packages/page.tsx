@@ -344,7 +344,7 @@ import Head from "next/head";
 
 const tourPricingByVehicle = [
   {
-    tour: "One Day Tour",
+    tour: "One Day Tour (Max 200Km per day)",
     car: { budget: 130, gold: 180, premium: 250 },
     van: { budget: 160, gold: 200, premium: 300 },
     bus: { budget: 220, gold: 300, premium: 380 },
