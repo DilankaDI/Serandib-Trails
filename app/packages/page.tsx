@@ -70,8 +70,8 @@
 //       { name: "Guide Service", check: true },
 //       { name: "Travel Insurance", check: true },
 //       { name: "24/7 Support", check: true },
-//       { name: "Entrance Tickets", check: true },
-//       { name: "Meals", check: true },
+//       { name: "Airport Pick-up and Drop", check: true },
+//       { name: "Snacks (One time)", check: true },
 //     ],
 //   },
 //   {
@@ -86,8 +86,8 @@
 //       { name: "Guide Service", check: true },
 //       { name: "Travel Insurance", check: true },
 //       { name: "24/7 Support", check: true },
-//       { name: "Entrance Tickets", check: true },
-//       { name: "Meals", check: false },
+//       { name: "Airport Pick-up and Drop", check: true },
+//       { name: "Snacks (One time)", check: false },
 //     ],
 //   },
 //   {
@@ -102,8 +102,8 @@
 //       { name: "Guide Service", check: true },
 //       { name: "Travel Insurance", check: true },
 //       { name: "24/7 Support", check: true },
-//       { name: "Entrance Tickets", check: false },
-//       { name: "Meals", check: false },
+//       { name: "Airport Pick-up and Drop", check: false },
+//       { name: "Snacks (One time)", check: false },
 //     ],
 //   },
 // ];
@@ -403,8 +403,8 @@ const packagesData = [
       { name: "Guide Service", check: true },
       { name: "Travel Insurance", check: true },
       { name: "24/7 Support", check: true },
-      { name: "Entrance Tickets", check: true },
-      { name: "Meals", check: true },
+      { name: "Snacks (One time)", check: true },
+      { name: "Airport Pick-up and Drop", check: true },
     ],
   },
   {
@@ -419,8 +419,8 @@ const packagesData = [
       { name: "Guide Service", check: true },
       { name: "Travel Insurance", check: true },
       { name: "24/7 Support", check: true },
-      { name: "Entrance Tickets", check: true },
-      { name: "Meals", check: false },
+      { name: "Snacks (One time)", check: true },
+      { name: "Airport Pick-up and Drop", check: false },
     ],
   },
   {
@@ -435,8 +435,8 @@ const packagesData = [
       { name: "Guide Service", check: true },
       { name: "Travel Insurance", check: true },
       { name: "24/7 Support", check: true },
-      { name: "Entrance Tickets", check: false },
-      { name: "Meals", check: false },
+      { name: "Snacks (One time)", check: false },
+      { name: "Airport Pick-up and Drop", check: false },
     ],
   },
 ];
@@ -658,7 +658,7 @@ const PackagesPage: React.FC = () => {
             Prices are per person in USD (United States Dollars)
           </p>
           <p className="text-center text-gray-500 mb-8">
-            Group = Maximum 8 Pax | Large Group = Maximum 36 Pax
+            Group = Maximum 6 Pax | Large Group = Maximum 36 Pax
           </p>
 
           <PricingTable vehicleType="car" title="Intimate Journey Pricing (Couples/Solo Travelers)" />
