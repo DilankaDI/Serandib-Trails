@@ -2,6 +2,7 @@ import CustomerReviews from "@/components/CustomerReviews";
 import FeaturedTrips from "@/components/FeaturedTrips";
 import HeroVideo from "@/components/HeroVideo";
 import AirportTransfer from "@/components/AirportTransfer";
+import Book from "@/components/Book";
 
 export default function Home() {
 
@@ -23,6 +24,7 @@ export default function Home() {
       <HeroVideo />
       <AirportTransfer />
       <FeaturedTrips />
+      <Book/>
       <CustomerReviews />
     </main>
   );

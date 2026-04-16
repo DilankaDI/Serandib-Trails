@@ -1,14 +1,41 @@
+// import "./globals.css";
+// import Navbar from "@/components/Navbar";
+// import Footer from "@/components/Footer"; 
+// import WhatsAppWidget from "@/components/WhatsAppWidget";
+
+// export const metadata = {
+//   title: "Soul Of Lanka",
+//   description: "Discover Sri Lanka with Soul Of Lanka",
+//   // icons: {
+//   //   icon: '/icon-v2.ico', 
+//   // },
+// };
+
+// export default function RootLayout({
+//   children,
+// }: {
+//   children: React.ReactNode;
+// }) {
+//   return (
+//     <html lang="en">
+//       <body className="antialiased">
+//         <Navbar />
+//         <main className="pt-16">{children}</main>
+//         <Footer /> {/* ✅ keep only here */}
+//         <WhatsAppWidget />
+//       </body>
+//     </html>
+//   );
+// }
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer"; 
+import Footer from "@/components/Footer";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
+import BookNowWidget from "@/components/BookNowWidget";
 
 export const metadata = {
   title: "Soul Of Lanka",
   description: "Discover Sri Lanka with Soul Of Lanka",
-  // icons: {
-  //   icon: '/icon-v2.ico', 
-  // },
 };
 
 export default function RootLayout({
@@ -20,8 +47,11 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased">
         <Navbar />
-        <main className="pt-16">{children}</main>
-        <Footer /> {/* ✅ keep only here */}
+        <main className="pt-16">
+          {children}
+        </main>
+        <Footer />
+        <BookNowWidget />
         <WhatsAppWidget />
       </body>
     </html>
