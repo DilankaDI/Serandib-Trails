@@ -22,9 +22,9 @@ export default function Home() {
       {/* <Carousel /> */}
 
       <HeroVideo />
-      <AirportTransfer />
       <FeaturedTrips />
       <Book/>
+      <AirportTransfer />
       <CustomerReviews />
     </main>
   );
